@@ -1,0 +1,13 @@
+Afin de créer, gérer et synchroniser un repo local à un en ligne, plusieurs commandes sont indispensables :
+
+git clone [url]
+# clone permet de réceptionner et mettre à jour des données publiées sur un repo dont le lien est connu et dont les autorisations le permettent
+git add (., etc)
+#permet de "stage" tout, un ou plusieurs changements désignés (par exemple uniquement un dossier parmi d'autres). Cela permet ensuite de mettre ces changements en valeur afin de les synchroniser.
+git commit (-a, -m "message")
+#permet de générer une version intermédiaire pouvant être publiée depuis le repo local vers le repo en ligne.
+
+git push 
+#transmet tous les commits générés vers github qui reçoit les données et, dépendant de la demande et des autorisations, va pouvoir les enregistrer sur une branche désignée ou les fusionner avec des données déjà existantes
+git pull 
+#en parallèle, pull permet de récupérer tout changement survenu sur le repo en ligne
